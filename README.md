@@ -109,7 +109,7 @@ Agregar al modelo estos objetos:
 - remera
 
 #### **Mensajes**
-- color
+- color 
 - cambiarColor
 - cambiarPeso
 - esBrillante

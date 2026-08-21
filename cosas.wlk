@@ -2,7 +2,7 @@
 
 object rojo {
 
-    method esFuerte(){
+    method esDeColorFuerte(){
         return true
     }
   
@@ -10,22 +10,29 @@ object rojo {
 
 object verde {
 
-    method esFuerte(){
+    method esDeColorFuerte(){
         return true
     }
 
 }
 
+object naranja {
+
+    method esDeColorFuerte(){
+        return true
+    }
+}
+
 object celeste {
 
-    method esFuerte() {
+    method esDeColorFuerte() {
         return false
     }
 }
 
 object pardo {
 
-    method esFuerte() {
+    method esDeColorFuerte() {
         return false
     }
 }
@@ -34,36 +41,87 @@ object pardo {
 
 object cobre{
 
-    method brilla() {
+    method esBrillante() {
         return true
     }
 }
 
 object vidrio {
 
-    method brilla() {
+    method esBrillante() {
         return true
     }
 }
 
 object lino {
 
-    method brilla() {
+    method esBrillante() {
         return false
     }
 }
 
 object madera {
 
-    method brilla(){
+    method esBrillante(){
         return false
     }
 }
 
 object cuero {
 
-    method brilla() {
+    method esBrillante(){
         return false
     }
-
 }
+
+/*Objetos*/
+
+object arito {
+
+    method color(){
+        return celeste
+    }
+
+    method material(){
+        return cobre
+    }
+
+    method peso(){
+        return 180
+    }
+}
+
+object banquito {
+
+    var cambiarDeColor = naranja
+
+    method peso(){
+        return 1700
+    }
+
+    method color(){
+        return cambiarDeColor
+    }
+}
+
+object cajita {
+
+    var objeto = arito
+
+    method color(){
+        return rojo
+    }
+
+    method material(){
+        return cobre
+    }
+
+    method guardarAdentro(){
+        return objeto
+    }
+
+    method peso(){
+        return 400 + objeto.peso()
+    }
+}
+
